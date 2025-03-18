@@ -1,0 +1,8 @@
+vsphere_user           = "administrator@vsphere.local"
+vsphere_password       = "jouw-wachtwoord"
+vsphere_server         = "vcenter.netlab.fontysict.nl"
+vm_name               = "nginx-server"
+vm_ipv4_address       = "192.168.154.138"
+vm_ipv4_gateway       = "192.168.154.1"
+vm_network            = "VM Network"
+vm_template           = "Ubuntu-Template"
