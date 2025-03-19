@@ -1,5 +1,5 @@
-vsphere_user           = "i538290@fontysict.nl"
-vsphere_password       = "."
+vsphere_user           = "email"
+vsphere_password       = "password"
 vsphere_server         = "vcenter.netlab.fontysict.nl"
 vm_name               = "nginx-server"
 vm_ipv4_address       = "192.168.154.138"
