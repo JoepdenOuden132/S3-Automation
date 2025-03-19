@@ -1,0 +1,8 @@
+vsphere_user           = "email"
+vsphere_password       = "password"
+vsphere_server         = "server"
+vm_name               = "nginx-server"
+vm_ipv4_address       = "IP-adres"
+vm_ipv4_gateway       = "IP-adress"
+vm_network            = "network"
+vm_template           = "Ubuntu-Template"
