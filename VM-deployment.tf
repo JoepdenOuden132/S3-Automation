@@ -8,12 +8,16 @@ terraform {
 }
 
 provider "vsphere" {
-  user           = "administrator@vsphere.local"
-  password       = "jouw-wachtwoord"
-  vsphere_server = "."
+  user           = var.vsphere_user
+  password       = var.vsphere_password
+  vsphere_server = var.vsphere_server
   allow_unverified_ssl = true
 }
 
+data "vsphere_virtual_machine" "template" {
+  name          = var.vm_template
+  datacenter_id = data.vsphere_datacenter.dc.id
+}
 
 resource "vsphere_virtual_machine" "nginx_vm" {
   name             = "nginx-server"
